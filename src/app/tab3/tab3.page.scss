@@ -1,0 +1,54 @@
+.settings-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Ocupa toda la altura de la pantalla */
+  padding: 10px;
+  background-color: #ffffff;
+
+  h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  .settings-group {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 400px; /* Ancho máximo */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    ion-item {
+      --background: transparent;
+      --min-height: 50px;
+      margin: 5px 0;
+
+      ion-label {
+        font-size: 16px;
+        color: #444;
+      }
+
+      ion-toggle,
+      ion-select,
+      ion-icon {
+        color: #81be5e;
+      }
+
+      &:hover {
+        background-color: #eaeaea; /* Efecto de hover */
+      }
+    }
+
+    ion-item[button] {
+      cursor: pointer;
+    }
+  }
+}
